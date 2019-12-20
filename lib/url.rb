@@ -65,7 +65,7 @@ class URL
   alias full to_s
 
   # Return the URI of the URL string
-  def uri
+  def to_uri
     URI.parse(to_s)
   end
 
@@ -110,24 +110,18 @@ class URL
   end
   alias / +
 
-  def join(*args)
+  def join(*args, **opts)
     return self if args.empty?
 
     url = dup
 
     args.each do |arg|
+      arg = ERB::Util.url_encode(arg) if opts[:encode]
       arg = URL.new(arg) unless arg.is_a? URL
       url += arg
     end
 
     url
-  end
-
-  def encode_join(*args)
-    return self if args.empty?
-
-    args.map! { |arg| ERB::Util.url_encode(arg) }
-    join(*args)
   end
 
   private
