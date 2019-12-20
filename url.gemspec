@@ -8,6 +8,6 @@ Gem::Specification.new do |s|
   s.description = 'Intuitive and powerful tools to work with urls'
   s.homepage    = 'https://github.com/KyleCRat/Ruby_URL'
 
-  s.files         = Dir['/**/*', 'CHANGELOG.md', 'MIT-LICENSE', 'README.md']
+  s.files         = Dir['/**/*', 'CHANGELOG.md', 'LICENSE.md', 'README.md']
   s.require_paths = ['lib']
 end
