@@ -4,8 +4,8 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.licenses    = ['MIT']
   s.email       = 'kylecrat@gmail.com'
-  s.summary     = 'Intuitve and powerful tools to work with urls'
-  s.description = 'Intuitve and powerful tools to work with urls'
+  s.summary     = 'Intuitive and powerful tools to work with urls'
+  s.description = 'Intuitive and powerful tools to work with urls'
   s.homepage    = 'https://github.com/KyleCRat/Ruby_URL'
 
   s.files         = Dir['/**/*', 'CHANGELOG.md', 'MIT-LICENSE', 'README.md']
